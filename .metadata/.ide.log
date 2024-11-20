@@ -1557,3 +1557,1280 @@ java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()"
 2024-11-19 20:08:18,739 [INFO] ApiDb:452 - User favorites MCUs=[]
 2024-11-19 20:08:18,740 [INFO] ApiDb:448 - Save user favorites file C:\Users\User/.stm32cubeide/favorites.boards.txt: 0 item(s)
 2024-11-19 20:08:18,740 [INFO] ApiDb:452 - User favorites Boards=[]
+2024-11-19 20:14:28,140 [INFO] MainUpdater:2873 - connection check result : 10
+2024-11-19 20:14:28,140 [INFO] MainUpdater:2873 - connection check result : 10
+2024-11-19 20:14:28,327 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-11-19 20:14:28,328 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-11-19 20:14:28,337 [ERROR] ProjectManagerView:394 - 
+java.lang.NullPointerException: Cannot invoke "javax.swing.JTextField.getText()" because the return value of "java.util.List.get(int)" is null
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab$10.caretUpdate(ProjectChoiceTab.java:2622) ~[filemanager.jar:?]
+	at javax.swing.text.JTextComponent.fireCaretUpdate(JTextComponent.java:412) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.fire(JTextComponent.java:4491) ~[?:?]
+	at javax.swing.text.JTextComponent$MutableCaretEvent.stateChanged(JTextComponent.java:4513) ~[?:?]
+	at javax.swing.text.DefaultCaret.fireStateChanged(DefaultCaret.java:842) ~[?:?]
+	at javax.swing.text.DefaultCaret.changeCaretPosition(DefaultCaret.java:1313) ~[?:?]
+	at javax.swing.text.DefaultCaret.handleSetDot(DefaultCaret.java:1212) ~[?:?]
+	at javax.swing.text.DefaultCaret.setDot(DefaultCaret.java:1193) ~[?:?]
+	at javax.swing.text.DefaultCaret$Handler.insertUpdate(DefaultCaret.java:1789) ~[?:?]
+	at javax.swing.text.AbstractDocument.fireInsertUpdate(AbstractDocument.java:226) ~[?:?]
+	at javax.swing.text.AbstractDocument.handleInsertString(AbstractDocument.java:780) ~[?:?]
+	at javax.swing.text.AbstractDocument.insertString(AbstractDocument.java:739) ~[?:?]
+	at javax.swing.text.PlainDocument.insertString(PlainDocument.java:131) ~[?:?]
+	at javax.swing.text.AbstractDocument.replace(AbstractDocument.java:698) ~[?:?]
+	at javax.swing.text.JTextComponent.setText(JTextComponent.java:1729) ~[?:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.createHeapStackFields(ProjectChoiceTab.java:972) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.buildLinkSettingsPanel(ProjectChoiceTab.java:3597) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.defineWindowsFields(ProjectChoiceTab.java:1940) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectChoiceTab.updateSettings(ProjectChoiceTab.java:550) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.gui.ProjectSettingsPanel.UpdateDialog(ProjectSettingsPanel.java:245) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.projectmanager.ProjectManagerView.propertyChange(ProjectManagerView.java:391) ~[filemanager.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:268) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.firePropertyChange(MXPropertyChangeSupport.java:54) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.closeConfig(MxSystem.java:900) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.closeConfig(MainPanel.java:781) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.OpenFileManager.loadConfigurationFile(OpenFileManager.java:265) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:352) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.engine.MainFileManager.userLoadConfig(MainFileManager.java:330) ~[filemanager.jar:?]
+	at com.st.microxplorer.plugins.filemanager.FileManagerView.getSpecificTask(FileManagerView.java:246) ~[filemanager.jar:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor.getMxTabbedPaneInstance(CubeMxEditor.java:1198) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.editor.CubeMxEditor$12$1.createSwingComponent(CubeMxEditor.java:1068) ~[com.st.stm32cube.common.mx_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite.doComponentCreation(EmbeddedSwingComposite.java:492) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$4.run(EmbeddedSwingComposite.java:291) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:166) ~[com.st.stm32cube.common.mx.oss_6.12.0.202406281431/:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2024-11-19 20:14:28,338 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2024-11-19 20:14:28,338 [INFO] ThirdParty:873 - entering critical section [close project]
+2024-11-19 20:14:28,338 [INFO] ThirdParty:883 - exiting critical section [close project]
+2024-11-19 20:14:28,340 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-11-19 20:14:28,349 [WARN] IpParametersView:151 - Warning: This peripheral hasn't parameters
+2024-11-19 20:14:28,354 [WARN] MainPanel:284 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2024-11-19 20:14:28,358 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 766912184 Bytes (1073741824)
+2024-11-19 20:14:28,359 [INFO] MicroXplorer:468 - Change Database Path : 
+2024-11-19 20:14:28,359 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-11-19 20:14:28,359 [INFO] OpenFileManager:332 - Change cursor
+2024-11-19 20:14:28,374 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-11-19 20:14:28,377 [INFO] Mcu:2032 - Initializing MCU STM32F401R(D-E)Tx STM32F401RETx STM32F401RET6
+2024-11-19 20:14:29,194 [INFO] Context:742 - Trying to add GPIOservice into a context  which must be forbidden
+2024-11-19 20:14:29,709 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2024-11-19 20:14:29,709 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2024-11-19 20:14:29,709 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2024-11-19 20:14:29,709 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2024-11-19 20:14:29,709 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,716 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2024-11-19 20:14:29,717 [WARN] ModelPack:524 - Component already loaded: STMicroelectronics:HAL Drivers:0.0.0:STMicroelectronics:Device:STMicro_Driver:XSPI:HAL::0.0.1:HAL_XSPI
+2024-11-19 20:14:29,754 [INFO] ThirdPartyModel:298 - Start build external matchings
+2024-11-19 20:14:30,281 [INFO] ThirdPartyModel:316 - End build external matchings
+2024-11-19 20:14:30,288 [INFO] ImportTextPane:205 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2024-11-19 20:14:30,545 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 695520656 Bytes (1073741824)
+2024-11-19 20:14:30,613 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2024-11-19 20:14:30,614 [INFO] ThirdParty:835 - entering critical section [change project]
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 3.3.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC9 1.0.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENVWB1 1.4.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F4 1.1.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.1
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SMBUS 2.1.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-WB05N 1.1.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TCPP 4.1.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.1.0
+2024-11-19 20:14:30,614 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-FREERTOS 1.2.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-IPS 3.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WB 2.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 7.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-F7 1.1.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L5 2.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC6 3.1.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-STBOX1 2.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 11.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G0 1.1.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SAFEA1 1.2.2
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 3.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DPower 1.2.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 5.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :EmbeddedOffice I-CUBE-FS-RTOS 1.0.1
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-FLIGHT1 5.0.2
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Cesanta I-CUBE-Mongoose 7.13.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.0.0
+2024-11-19 20:14:30,615 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-G4 2.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-DISPLAY 3.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :RealThread X-CUBE-RT-Thread_Nano 4.1.1
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 7.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC10 1.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 5.7.2
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :quantropi X-CUBE-qispace-sdk-base 1.9.3
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ISPU 2.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-EEPRMA1 5.1.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALS 1.0.2
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :emotas I-CUBE-CANOPEN 1.3.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC7 1.0.1
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :ITTIA_DB I-CUBE-ITTIADB 8.9.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.24.1
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfTPM 3.4.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :portGmbH I-Cube-SoM-uGOAL 1.1.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLEMGR 3.1.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-SMARTAG2 1.2.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-WL 2.0.0
+2024-11-19 20:14:30,616 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :SEGGER I-CUBE-embOS 1.3.1
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.4.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-SNS-MOTENV1 5.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7RS 1.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfMQTT 1.19.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-L4 2.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :WES I-CUBE-Cesium 1.3.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-ASTRA1 2.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 4.0.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.3.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOF1 3.4.2
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 9.1.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :Infineon AIROC-Wi-Fi-Bluetooth-STM32 1.6.1
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2024-11-19 20:14:30,617 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSH 1.4.17
+2024-11-19 20:14:30,617 [INFO] ThirdParty:841 - exiting critical section [change project]
+2024-11-19 20:14:30,758 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-11-19 20:14:30,759 [INFO] PinOutPanel:1561 - setPackage(STM32F401RETx,LQFP64)
+2024-11-19 20:14:31,003 [INFO] UtilMem:75 - Before build in PCC Used Memory: 828185400 Bytes (1073741824)
+2024-11-19 20:14:31,217 [INFO] UtilMem:75 - After build in PCC Used Memory: 871703352 Bytes (1073741824)
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,247 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,248 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,249 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,249 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,249 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,250 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,250 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,250 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,250 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,251 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,252 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,252 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,252 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,252 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,253 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,253 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,254 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,254 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,255 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,255 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,255 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,256 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,256 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,257 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 20:14:31,260 [INFO] ApiDbMcu:508 - Load IP Config File for PDM2PCM
+2024-11-19 20:14:31,302 [INFO] CADModel:165 - CPN selected for project levelSTM32F401RET6
+2024-11-19 20:14:31,302 [INFO] CADModel:114 - Register for checkConnection events
+2024-11-19 20:14:31,355 [INFO] OpenFileManager:363 - Restore cursor
+2024-11-19 20:14:50,141 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x165,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:14:51,669 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:14:53,683 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 828970024 Bytes (1073741824)
+2024-11-19 20:14:54,532 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 849290888 Bytes (1073741824)
+2024-11-19 20:14:55,630 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 880748168 Bytes (1073741824)
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:14:55,737 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:14:55,738 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:14:55,848 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:14:55,957 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:14:55,997 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:14:56,086 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:14:56,260 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:14:56,370 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:14:56,375 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:14:56,439 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:14:56,463 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:14:56,554 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:14:56,558 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:14:56,610 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:14:56,628 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:14:56,746 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:14:56,786 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:14:56,787 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:14:56,811 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:14:56,893 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:14:56,906 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:14:57,015 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:14:57,361 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 155mS.
+2024-11-19 20:14:57,363 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:14:57,450 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:14:57,461 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-11-19 20:14:57,504 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-11-19 20:14:57,510 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-11-19 20:14:57,562 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-11-19 20:14:57,609 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-11-19 20:14:57,620 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
+2024-11-19 20:14:58,574 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1211mS.
+2024-11-19 20:14:58,575 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 20:14:58,577 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:16:40,916 [INFO] WebApp:189 - Connection lost
+2024-11-19 20:16:41,120 [INFO] WebApp:186 - Connection restablished
+2024-11-19 20:24:14,985 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:24:15,075 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:24:26,777 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 699140112 Bytes (1073741824)
+2024-11-19 20:24:31,356 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 719063056 Bytes (1073741824)
+2024-11-19 20:24:32,890 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 752617488 Bytes (1073741824)
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:24:33,059 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:24:33,060 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:24:33,192 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:24:33,322 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:24:33,346 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:24:33,455 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:24:33,723 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:24:33,911 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:24:33,917 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:24:33,992 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:24:34,032 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:24:34,136 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:24:34,139 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:24:34,199 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:24:34,217 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:24:34,322 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:24:34,358 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:24:34,358 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:24:34,380 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:24:34,473 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:24:34,491 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:24:34,624 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:24:35,093 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 278mS.
+2024-11-19 20:24:35,096 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:24:35,218 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:24:36,387 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1289mS.
+2024-11-19 20:24:36,388 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 20:24:36,395 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:29:08,340 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:29:11,655 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:29:43,585 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:30:10,394 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:33:00,880 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:33:10,425 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 861547440 Bytes (1073741824)
+2024-11-19 20:33:11,162 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 880421808 Bytes (1073741824)
+2024-11-19 20:33:12,337 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 915547056 Bytes (1073741824)
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:33:12,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:33:12,457 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:33:12,573 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:33:12,693 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:33:12,708 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:33:12,802 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:33:12,983 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:33:13,139 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:33:13,143 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:33:13,198 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:33:13,217 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:33:13,308 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:33:13,310 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:33:13,363 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:33:13,380 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:33:13,477 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:33:13,512 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:33:13,512 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:33:13,529 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:33:13,640 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:33:13,654 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:33:13,800 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:33:14,166 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 153mS.
+2024-11-19 20:33:14,169 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:33:14,272 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:33:15,080 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 911mS.
+2024-11-19 20:33:15,081 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:33:15,083 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:46:57,415 [INFO] WebApp:189 - Connection lost
+2024-11-19 20:46:57,608 [INFO] WebApp:186 - Connection restablished
+2024-11-19 20:48:51,322 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:51:40,312 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 711521112 Bytes (1073741824)
+2024-11-19 20:51:40,788 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 729346904 Bytes (1073741824)
+2024-11-19 20:51:42,055 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 786492248 Bytes (1073741824)
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:51:42,199 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:51:42,200 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:51:42,297 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:51:42,440 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:51:42,466 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:51:42,577 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:51:42,764 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:51:43,017 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:51:43,021 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:51:43,093 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:51:43,117 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:51:43,218 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:51:43,220 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:51:43,274 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:51:43,291 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:51:43,390 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:51:43,425 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:51:43,426 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:51:43,446 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:51:43,526 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:51:43,540 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:51:43,666 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:51:43,977 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 141mS.
+2024-11-19 20:51:43,980 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:51:44,054 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:51:45,165 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1185mS.
+2024-11-19 20:51:45,166 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 20:51:45,168 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:54:39,699 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 678983848 Bytes (1073741824)
+2024-11-19 20:54:40,533 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 698241288 Bytes (1073741824)
+2024-11-19 20:54:41,629 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 709159080 Bytes (1073741824)
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:54:41,783 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:54:41,784 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:54:41,891 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:54:42,009 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:54:42,027 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:54:42,126 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:54:42,322 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:54:42,425 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:54:42,429 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:54:42,514 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:54:42,536 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:54:42,636 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:54:42,638 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:54:42,702 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:54:42,722 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:54:42,816 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:54:42,850 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:54:42,851 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:54:42,867 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:54:42,940 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:54:42,954 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:54:43,071 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:54:43,362 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 137mS.
+2024-11-19 20:54:43,364 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:54:43,439 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:54:44,407 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1043mS.
+2024-11-19 20:54:44,414 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 6mS.
+2024-11-19 20:54:44,416 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:55:34,543 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 696092056 Bytes (1073741824)
+2024-11-19 20:55:35,215 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 714955104 Bytes (1073741824)
+2024-11-19 20:55:36,328 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 750080352 Bytes (1073741824)
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:55:36,456 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:55:36,457 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:55:36,566 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:55:36,661 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:55:36,680 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:55:36,767 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:55:36,938 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:55:37,033 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:55:37,038 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:55:37,096 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:55:37,118 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:55:37,275 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:55:37,279 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:55:37,336 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:55:37,354 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:55:37,461 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:55:37,499 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:55:37,500 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:55:37,523 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:55:37,602 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:55:37,618 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:55:37,761 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:55:38,127 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 181mS.
+2024-11-19 20:55:38,130 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:55:38,231 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:55:39,186 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1056mS.
+2024-11-19 20:55:39,187 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 20:55:39,189 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:56:58,064 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:57:08,451 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:57:28,814 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 924428488 Bytes (1073741824)
+2024-11-19 20:57:29,405 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 679965424 Bytes (1073741824)
+2024-11-19 20:57:30,514 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 716583344 Bytes (1073741824)
+2024-11-19 20:57:30,652 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:57:30,652 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:57:30,652 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:57:30,652 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:57:30,652 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:57:30,653 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:57:30,653 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:57:30,653 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:57:30,753 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:57:30,852 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:57:30,871 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:57:30,978 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:57:31,218 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:57:31,336 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:57:31,349 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:57:31,407 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:57:31,432 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:57:31,534 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:57:31,537 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:57:31,594 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:57:31,611 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:57:31,710 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:57:31,749 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:57:31,750 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:57:31,769 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:57:31,845 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:57:31,859 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:57:31,980 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:57:32,272 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 133mS.
+2024-11-19 20:57:32,275 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:57:32,369 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:57:33,350 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1075mS.
+2024-11-19 20:57:33,351 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:57:33,353 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:59:03,386 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 20:59:07,504 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 877888328 Bytes (1073741824)
+2024-11-19 20:59:08,341 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 896762696 Bytes (1073741824)
+2024-11-19 20:59:09,467 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 698174568 Bytes (1073741824)
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 20:59:09,576 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 20:59:09,577 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 20:59:09,664 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 20:59:09,748 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 20:59:09,765 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 20:59:09,860 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 20:59:10,039 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 20:59:10,122 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 20:59:10,126 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 20:59:10,183 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 20:59:10,208 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 20:59:10,307 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 20:59:10,310 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 20:59:10,370 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 20:59:10,388 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 20:59:10,492 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 20:59:10,528 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 20:59:10,529 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 20:59:10,552 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 20:59:10,619 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 20:59:10,633 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 20:59:10,775 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 20:59:11,123 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 149mS.
+2024-11-19 20:59:11,125 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 20:59:11,208 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 20:59:12,037 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 912mS.
+2024-11-19 20:59:12,037 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 20:59:12,039 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:17:13,930 [INFO] WebApp:189 - Connection lost
+2024-11-19 21:17:14,121 [INFO] WebApp:186 - Connection restablished
+2024-11-19 21:33:25,965 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 932852240 Bytes (1073741824)
+2024-11-19 21:33:26,899 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 954350080 Bytes (1073741824)
+2024-11-19 21:33:27,974 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 709769696 Bytes (1073741824)
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:33:28,117 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:33:28,118 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:33:28,233 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:33:28,360 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:33:28,379 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:33:28,518 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:33:28,773 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:33:28,970 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:33:28,974 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:33:29,032 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:33:29,051 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:33:29,158 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:33:29,161 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:33:29,220 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:33:29,241 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:33:29,349 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:33:29,383 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:33:29,384 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:33:29,406 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:33:29,488 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:33:29,502 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:33:29,632 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:33:29,960 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 149mS.
+2024-11-19 21:33:29,963 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:33:30,062 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:33:30,915 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 952mS.
+2024-11-19 21:33:30,916 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 21:33:30,917 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:37:16,376 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,420 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,435 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,546 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:37:16,680 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:37:16,771 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,826 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,827 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,848 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,881 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,882 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:16,903 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:37:35,644 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 841706008 Bytes (1073741824)
+2024-11-19 21:37:53,374 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 863520304 Bytes (1073741824)
+2024-11-19 21:38:03,708 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 895016520 Bytes (1073741824)
+2024-11-19 21:38:03,831 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-19 21:38:03,832 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:38:03,833 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:38:03,941 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:38:04,044 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:38:04,061 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:38:04,148 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:38:04,389 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:38:04,461 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:38:04,465 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:38:04,519 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:38:04,538 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:38:04,673 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:38:04,676 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:38:04,731 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:38:04,749 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:38:04,848 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:38:04,894 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:38:04,894 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:38:04,918 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:38:04,996 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:38:05,010 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:38:05,135 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:38:05,472 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 167mS.
+2024-11-19 21:38:05,475 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:38:05,557 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:38:06,463 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 988mS.
+2024-11-19 21:38:06,464 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:38:06,466 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:38:26,787 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,138 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,142 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,142 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,143 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,152 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,167 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,168 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,175 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,204 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,204 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,204 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,205 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:30,222 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,818 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:38:43,861 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:38:43,884 [INFO] ADCParametersView:116 -                Rank 1 : false
+2024-11-19 21:40:24,592 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 738999024 Bytes (1073741824)
+2024-11-19 21:40:25,373 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 758429248 Bytes (1073741824)
+2024-11-19 21:40:32,894 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 855946816 Bytes (1073741824)
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-19 21:40:33,037 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:40:33,038 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:40:33,157 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:40:33,261 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:40:33,277 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:40:33,372 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:40:33,577 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:40:33,658 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:40:33,662 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:40:33,724 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:40:33,744 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:40:33,827 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:40:33,831 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:40:33,884 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:40:33,901 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:40:34,004 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:40:34,040 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:40:34,040 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:40:34,062 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:40:34,144 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:40:34,158 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:40:34,284 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:40:34,712 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 170mS.
+2024-11-19 21:40:34,716 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:40:34,837 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:40:35,803 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1088mS.
+2024-11-19 21:40:35,803 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:40:35,805 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:43:14,891 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:43:21,099 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 869085696 Bytes (1073741824)
+2024-11-19 21:43:21,840 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 887433728 Bytes (1073741824)
+2024-11-19 21:43:23,308 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 923085312 Bytes (1073741824)
+2024-11-19 21:43:23,464 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:43:23,464 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-19 21:43:23,465 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:43:23,465 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:43:23,597 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:43:23,731 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:43:23,750 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:43:23,870 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:43:24,130 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:43:24,223 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:43:24,228 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:43:24,358 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:43:24,387 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:43:24,512 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:43:24,516 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:43:24,585 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:43:24,604 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:43:24,717 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:43:24,752 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:43:24,753 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:43:24,770 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:43:24,843 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:43:24,857 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:43:24,985 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:43:25,282 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 140mS.
+2024-11-19 21:43:25,284 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:43:25,373 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:43:26,292 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1008mS.
+2024-11-19 21:43:26,293 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:43:26,295 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:47:30,424 [INFO] WebApp:189 - Connection lost
+2024-11-19 21:47:30,605 [INFO] WebApp:186 - Connection restablished
+2024-11-19 21:55:47,659 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:55:54,740 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 844210864 Bytes (1073741824)
+2024-11-19 21:55:55,379 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 862023248 Bytes (1073741824)
+2024-11-19 21:55:56,669 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 898199096 Bytes (1073741824)
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-19 21:55:56,837 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:55:56,837 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:55:56,953 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:55:57,133 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:55:57,183 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:55:57,437 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:55:58,108 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:55:58,635 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:55:58,647 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:55:58,816 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:55:58,870 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:55:59,097 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:55:59,102 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:55:59,220 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:55:59,256 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:55:59,469 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:55:59,540 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:55:59,542 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:55:59,577 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:55:59,750 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:55:59,776 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:56:00,061 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:56:00,687 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 305mS.
+2024-11-19 21:56:00,693 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:56:00,837 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:56:02,465 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1772mS.
+2024-11-19 21:56:02,466 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 21:56:02,470 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:56:55,264 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-19 21:57:07,490 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 885938384 Bytes (1073741824)
+2024-11-19 21:57:08,043 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 903237840 Bytes (1073741824)
+2024-11-19 21:57:09,731 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 733705440 Bytes (1073741824)
+2024-11-19 21:57:10,032 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-19 21:57:10,032 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-11-19 21:57:10,032 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:57:10,032 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-19 21:57:10,032 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-19 21:57:10,033 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-19 21:57:10,033 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-19 21:57:10,033 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-19 21:57:10,034 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\
+2024-11-19 21:57:10,259 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp_save
+2024-11-19 21:57:10,556 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\license.tmp
+2024-11-19 21:57:10,596 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp_save
+2024-11-19 21:57:10,772 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\gpio.tmp
+2024-11-19 21:57:11,254 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c_save
+2024-11-19 21:57:11,424 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_it.c
+2024-11-19 21:57:11,431 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h_save
+2024-11-19 21:57:11,576 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_it.h
+2024-11-19 21:57:11,623 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-19 21:57:11,866 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\stm32f4xx_hal_msp.c
+2024-11-19 21:57:11,872 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp_save
+2024-11-19 21:57:11,988 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\MXTmpFiles\system.tmp
+2024-11-19 21:57:12,024 [INFO] CodeEngine:311 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-19 21:57:12,259 [INFO] CodeEngine:335 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-19 21:57:12,330 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-11-19 21:57:12,332 [WARN] CodeGenerator:4002 - IP not found : null
+2024-11-19 21:57:12,371 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Inc\main.h_save
+2024-11-19 21:57:12,555 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Inc\main.h
+2024-11-19 21:57:12,583 [INFO] CodeEngine:255 - oldGeneratedFile, D:\ECE198stm32\Project\Sensor\Core\Src\main.c_save
+2024-11-19 21:57:12,860 [INFO] CodeEngine:279 - Generated code: D:\ECE198stm32\Project\Sensor\Core\Src\main.c
+2024-11-19 21:57:13,584 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 320mS.
+2024-11-19 21:57:13,590 [INFO] ProjectBuilder:4828 - Project Generator version: 4.4.0-B60
+2024-11-19 21:57:13,793 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-11-19 21:57:15,430 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1841mS.
+2024-11-19 21:57:15,431 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-11-19 21:57:15,435 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-11-19 22:16:57,657 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-11-19 22:18:37,953 [INFO] Activator:176 - 
+
+
+2024-11-19 22:18:37,956 [INFO] Activator:177 - !SESSION log4j initialized
+2024-11-19 22:18:45,465 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-11-19 22:18:46,652 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-11-19 22:18:46,676 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-11-19 22:18:46,677 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-11-19 22:18:46,677 [WARN] ApiDb:259 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-11-19 22:18:46,689 [INFO] ApiDb:250 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:46,691 [INFO] DbMcusAds:125 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:46,695 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-11-19 22:18:46,903 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2024-11-19 22:18:47,029 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-11-19 22:18:47,029 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-11-19 22:18:47,030 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-11-19 22:18:47,030 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,030 [INFO] ApiDb:250 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:47,031 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,031 [INFO] DbMcusAds:125 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:47,031 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,031 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,031 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-11-19 22:18:47,153 [INFO] MainPanel:268 - HeapMemory: 268435456
+2024-11-19 22:18:47,281 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/mcu/
+2024-11-19 22:18:47,282 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/boardmanager/
+2024-11-19 22:18:47,282 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\\db\/plugins/mcufinder/images/
+2024-11-19 22:18:47,282 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,283 [INFO] ApiDb:250 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:47,283 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,283 [INFO] DbMcusAds:125 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/
+2024-11-19 22:18:47,283 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,283 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\User\.stmcufinder\plugins\mcufinder/ => C:\Users\User\.stmcufinder\plugins\mcufinder
+2024-11-19 22:18:47,283 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\User\.stmcufinder\plugins\mcufinder//mcu/cs/
+2024-11-19 22:18:47,311 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-11-19 22:18:47,313 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2024-11-19 22:18:47,315 [INFO] PluginManage:310 - Check plugin analytics
+2024-11-19 22:18:47,602 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2024-11-19 22:18:47,602 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2024-11-19 22:18:47,603 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.F4.1.28.0
+2024-11-19 22:18:47,608 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2024-11-19 22:18:47,608 [INFO] PluginManage:310 - Check plugin cadmodel
+2024-11-19 22:18:47,615 [INFO] CADModel:105 - Init CAD model plugin
+2024-11-19 22:18:47,615 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2024-11-19 22:18:47,615 [INFO] PluginManage:310 - Check plugin clock
+2024-11-19 22:18:47,634 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2024-11-19 22:18:47,634 [INFO] PluginManage:310 - Check plugin ddr
+2024-11-19 22:18:47,637 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2024-11-19 22:18:47,637 [INFO] PluginManage:310 - Check plugin filemanager
+2024-11-19 22:18:47,866 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2024-11-19 22:18:47,866 [INFO] PluginManage:310 - Check plugin ipmanager
+2024-11-19 22:18:47,880 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2024-11-19 22:18:47,880 [INFO] PluginManage:310 - Check plugin lpbam
+2024-11-19 22:18:47,893 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2024-11-19 22:18:47,893 [INFO] PluginManage:310 - Check plugin memorymap
+2024-11-19 22:18:47,914 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2024-11-19 22:18:47,914 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2024-11-19 22:18:47,925 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2024-11-19 22:18:47,925 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2024-11-19 22:18:48,067 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2024-11-19 22:18:48,287 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2024-11-19 22:18:48,287 [INFO] PluginManage:310 - Check plugin power
+2024-11-19 22:18:48,300 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2024-11-19 22:18:48,300 [INFO] PluginManage:310 - Check plugin projectmanager
+2024-11-19 22:18:48,326 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:4)
+2024-11-19 22:18:48,326 [INFO] PluginManage:310 - Check plugin rif
+2024-11-19 22:18:48,335 [INFO] PluginManage:359 - Loaded plugin rif (category:base,tabindex:3)
+2024-11-19 22:18:48,336 [INFO] PluginManage:310 - Check plugin thirdparty
+2024-11-19 22:18:48,531 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2024-11-19 22:18:48,531 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2024-11-19 22:18:48,532 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2024-11-19 22:18:48,532 [INFO] PluginManage:310 - Check plugin tools
+2024-11-19 22:18:48,532 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2024-11-19 22:18:48,537 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2024-11-19 22:18:48,537 [INFO] PluginManage:310 - Check plugin tutovideos
+2024-11-19 22:18:48,795 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2024-11-19 22:18:48,796 [INFO] PluginManage:310 - Check plugin updater
+2024-11-19 22:18:48,820 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2024-11-19 22:18:48,820 [INFO] PluginManage:310 - Check plugin userauth
+2024-11-19 22:18:48,828 [INFO] UserAuth:113 - Init User Auth plugin
+2024-11-19 22:18:48,829 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2024-11-19 22:18:48,829 [INFO] PluginManage:283 - PluginManage : Loaded plugins [18]
+2024-11-19 22:18:49,160 [INFO] PinOutPanel:1561 - setPackage(No Configuration,No Configuration)
+2024-11-19 22:18:49,283 [INFO] CADModel:165 - CPN selected for project level
+2024-11-19 22:18:49,283 [INFO] CADModel:114 - Register for checkConnection events
+2024-11-19 22:18:49,307 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,307 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2024-11-19 22:18:49,334 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,335 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2024-11-19 22:18:49,339 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,339 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2024-11-19 22:18:49,342 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,342 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2024-11-19 22:18:49,346 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,346 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2024-11-19 22:18:49,350 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,350 [INFO] PluginManager:220 - loadIPPluginJar : add ddr_ctrl_phy
+2024-11-19 22:18:49,355 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,355 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2024-11-19 22:18:49,371 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,372 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2024-11-19 22:18:49,376 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,377 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2024-11-19 22:18:49,380 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,381 [INFO] PluginManager:220 - loadIPPluginJar : add extmemmanager
+2024-11-19 22:18:49,383 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,384 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2024-11-19 22:18:49,390 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,390 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2024-11-19 22:18:49,398 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,399 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2024-11-19 22:18:49,401 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,401 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2024-11-19 22:18:49,404 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,404 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2024-11-19 22:18:49,411 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,411 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2024-11-19 22:18:49,417 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,418 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2024-11-19 22:18:49,422 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,422 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2024-11-19 22:18:49,425 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,426 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2024-11-19 22:18:49,431 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,431 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2024-11-19 22:18:49,434 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,434 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2024-11-19 22:18:49,438 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,438 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2024-11-19 22:18:49,442 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,442 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2024-11-19 22:18:49,451 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,452 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2024-11-19 22:18:49,457 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,457 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2024-11-19 22:18:49,459 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,459 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2024-11-19 22:18:49,466 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,467 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2024-11-19 22:18:49,471 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,471 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2024-11-19 22:18:49,475 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,475 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2024-11-19 22:18:49,479 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,479 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2024-11-19 22:18:49,483 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,483 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2024-11-19 22:18:49,491 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,494 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2024-11-19 22:18:49,496 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,496 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2024-11-19 22:18:49,499 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,499 [INFO] PluginManager:220 - loadIPPluginJar : add radio
+2024-11-19 22:18:49,503 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,503 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2024-11-19 22:18:49,507 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,507 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2024-11-19 22:18:49,510 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,510 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2024-11-19 22:18:49,516 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,516 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2024-11-19 22:18:49,519 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,519 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2024-11-19 22:18:49,523 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,523 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2024-11-19 22:18:49,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,526 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2024-11-19 22:18:49,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,529 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2024-11-19 22:18:49,531 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,531 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2024-11-19 22:18:49,533 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,533 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2024-11-19 22:18:49,537 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,537 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2024-11-19 22:18:49,540 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2024-11-19 22:18:49,540 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2024-11-19 22:18:49,697 [INFO] CADModel:165 - CPN selected for project level
+2024-11-19 22:18:49,697 [INFO] CADModel:114 - Register for checkConnection events
+2024-11-19 22:18:49,698 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:49,698 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-11-19 22:18:49,910 [INFO] CADModel:165 - CPN selected for project level
+2024-11-19 22:18:49,910 [INFO] CADModel:114 - Register for checkConnection events
+2024-11-19 22:18:49,910 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:49,910 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2024-11-19 22:18:49,915 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,076 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,082 [INFO] DbMcusAds:53 - JSON generation date=Fri Sep 20 09:04:38 EDT 2024 (1726837478367)
+2024-11-19 22:18:50,083 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,132 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-11-19 22:18:50,268 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,271 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,271 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,271 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2024-11-19 22:18:50,272 [FATAL] Updater:334 - Updater called before beeing initialized
+2024-11-19 22:18:50,353 [ERROR] Updater:1164 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2024-11-19 22:18:50,356 [INFO] Updater:1100 - Updater Version found : 6.12.0
+2024-11-19 22:18:50,381 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431
+2024-11-19 22:18:51,538 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [2/15]
+2024-11-19 22:18:52,014 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Nov 19, 2024 10:18:52 PM java.util.prefs.WindowsPreferences <init>
+2024-11-19 22:18:52,022 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0xffffffff80000002. Windows RegCreateKeyEx(...) returned error code 5.
+2024-11-19 22:18:52,023 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2024-11-19 22:18:52,581 [INFO] MainUpdater:2873 - connection check result : 10
+2024-11-19 22:18:52,582 [INFO] MainUpdater:290 - Updater Check For Update Now.
+2024-11-19 22:18:52,582 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.120
+2024-11-19 22:18:52,596 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2024-11-19 22:18:52,598 [INFO] UserAuth:417 - Internet connection configuration mode: 1
+2024-11-19 22:18:52,627 [INFO] JxBrowserEngine:152 - Initiate JxBrowser Engine with user profile folder
+2024-11-19 22:18:52,858 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2024-11-19 22:18:54,094 [INFO] WebApp:167 - Instantiating new browser for Auth
+2024-11-19 22:18:55,102 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENVWB1.1.4.0
+2024-11-19 22:18:55,119 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.1
+2024-11-19 22:18:55,144 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SMBUS.2.1.0
+2024-11-19 22:18:55,162 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-WB05N.1.1.0
+2024-11-19 22:18:55,247 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F7.1.1.0
+2024-11-19 22:18:55,446 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-MEMS1.11.0.0
+2024-11-19 22:18:55,853 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-FLIGHT1.5.0.2
+2024-11-19 22:18:55,896 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DISPLAY.3.0.0
+2024-11-19 22:18:55,921 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE1.7.0.0
+2024-11-19 22:18:56,054 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC10.1.0.0
+2024-11-19 22:18:56,085 [WARN] PackLoader:240 - Cannot read IP mode file for emotas.I-CUBE-CANOPEN.1.3.0
+2024-11-19 22:18:56,167 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLEMGR.3.1.0
+2024-11-19 22:18:56,463 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-SMARTAG2.1.2.0
+2024-11-19 22:18:56,513 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-11-19 22:18:56,515 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-11-19 22:18:56,538 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-11-19 22:18:56,544 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-11-19 22:18:56,548 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 1 : Invalid condition id : UX_CORESTACK_Condition cause : null
+2024-11-19 22:18:56,550 [INFO] WebApp:448 - Apply proxy settings
+2024-11-19 22:18:56,554 [INFO] WebApp:533 - Chromium requires no authentication
+2024-11-19 22:18:56,555 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WL.2.0.0
+2024-11-19 22:18:56,584 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-MOTENV1.5.0.0
+2024-11-19 22:18:56,602 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfMQTT.1.19.0
+2024-11-19 22:18:56,622 [WARN] PackLoader:240 - Cannot read IP mode file for WES.I-CUBE-Cesium.1.3.0
+2024-11-19 22:18:56,635 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-BLE2.3.3.0
+2024-11-19 22:18:56,649 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC9.1.0.0
+2024-11-19 22:18:56,663 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TCPP.4.1.0
+2024-11-19 22:18:56,696 [INFO] WebApp:476 - Direct internet connection detected
+2024-11-19 22:18:56,720 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G0.1.1.0
+2024-11-19 22:18:56,751 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SAFEA1.1.2.2
+2024-11-19 22:18:56,767 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC4.3.0.0
+2024-11-19 22:18:56,804 [WARN] PackLoader:240 - Cannot read IP mode file for EmbeddedOffice.I-CUBE-FS-RTOS.1.0.1
+2024-11-19 22:18:56,805 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,806 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,806 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,806 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,806 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,807 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,807 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,807 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,807 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,807 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,808 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,808 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,808 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,808 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,809 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,811 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,811 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,811 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,811 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,811 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,812 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,812 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,812 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,812 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,812 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,813 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,813 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,813 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,813 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,814 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,815 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,815 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,815 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,816 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,816 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,816 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,817 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,817 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,819 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,819 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,819 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,819 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,820 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,820 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,820 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,821 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,821 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,821 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,822 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,822 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,822 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,823 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,823 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,823 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,823 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,824 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,824 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,824 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,825 [ERROR] ConditionMgr:805 - Attr not supported : Dmpu
+2024-11-19 22:18:56,840 [WARN] PackLoader:240 - Cannot read IP mode file for RealThread.X-CUBE-RT-Thread_Nano.4.1.1
+2024-11-19 22:18:56,854 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2024-11-19 22:18:56,866 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSL.5.7.2
+2024-11-19 22:18:56,878 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : Cortex-A Device cause : null
+2024-11-19 22:18:56,888 [INFO] WebApp:869 - Register for checkConnection events
+2024-11-19 22:18:56,889 [INFO] WebApp:448 - Apply proxy settings
+2024-11-19 22:18:56,889 [INFO] WebApp:533 - Chromium requires no authentication
+2024-11-19 22:18:56,891 [INFO] WebApp:476 - Direct internet connection detected
+2024-11-19 22:18:56,942 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2024-11-19 22:18:56,943 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2024-11-19 22:18:56,943 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : Cortex-A Device cause : null
+2024-11-19 22:18:56,958 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-EEPRMA1.5.1.0
+2024-11-19 22:18:56,979 [WARN] PackLoader:240 - Cannot read IP mode file for ITTIA_DB.I-CUBE-ITTIADB.8.9.0
+2024-11-19 22:18:57,131 [WARN] PackLoader:240 - Cannot read IP mode file for SEGGER.I-CUBE-embOS.1.3.1
+2024-11-19 22:18:57,163 [INFO] WebApp:186 - Connection restablished
+2024-11-19 22:18:57,341 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALGOBUILD.1.4.0
+2024-11-19 22:18:57,353 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.9.1.0
+2024-11-19 22:18:57,418 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-F4.1.1.0
+2024-11-19 22:18:57,437 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.1.0
+2024-11-19 22:18:57,456 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-FREERTOS.1.2.0
+2024-11-19 22:18:57,511 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L5.2.0.0
+2024-11-19 22:18:57,570 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC6.3.1.0
+2024-11-19 22:18:57,590 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-DPower.1.2.0
+2024-11-19 22:18:57,599 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AI.9.0.0
+2024-11-19 22:18:57,616 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-NFC7.1.0.1
+2024-11-19 22:18:57,682 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-11-19 22:18:57,684 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-L4.2.0.0
+2024-11-19 22:18:57,688 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-11-19 22:18:57,689 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-11-19 22:18:57,690 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : LAN8742 Phy interface Condition cause : null
+2024-11-19 22:18:57,718 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SFXS2LP1.4.0.0
+2024-11-19 22:18:57,823 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7.3.3.0
+2024-11-19 22:18:57,880 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-IPS.3.0.0
+2024-11-19 22:18:58,109 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,110 [WARN] ConditionMgr:438 - getConditionDescription Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,265 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-WB.2.0.0
+2024-11-19 22:18:58,268 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,268 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,269 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,271 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,272 [WARN] ConditionMgr:1039 - genDependencies : Invalid condition id : UX DEVICE CLASS RTOS Condition cause : null
+2024-11-19 22:18:58,341 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-GNSS1.7.0.0
+2024-11-19 22:18:58,387 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-SNS-STBOX1.2.0.0
+2024-11-19 22:18:58,462 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-SUBG2.5.0.0
+2024-11-19 22:18:58,524 [WARN] PackLoader:240 - Cannot read IP mode file for Cesanta.I-CUBE-Mongoose.7.13.0
+2024-11-19 22:18:58,572 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-G4.2.0.0
+2024-11-19 22:18:58,589 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ISPU.2.0.0
+2024-11-19 22:18:58,608 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-ALS.1.0.2
+2024-11-19 22:18:58,621 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.24.0
+2024-11-19 22:18:58,629 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOUCHGFX.4.24.1
+2024-11-19 22:18:58,640 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfTPM.3.4.0
+2024-11-19 22:18:58,654 [WARN] PackLoader:240 - Cannot read IP mode file for portGmbH.I-Cube-SoM-uGOAL.1.1.0
+2024-11-19 22:18:58,735 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-AZRTOS-H7RS.1.0.0
+2024-11-19 22:18:58,777 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-ASTRA1.2.0.0
+2024-11-19 22:18:58,808 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.X-CUBE-TOF1.3.4.2
+2024-11-19 22:18:58,939 [INFO] WebApp:220 - Starting web application
+2024-11-19 22:18:58,939 [INFO] WebApp:578 - Web application path used C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.0.202406281431\db\plugins\mcufinder\reactClient1\index.html
+2024-11-19 22:18:58,945 [WARN] PackLoader:240 - Cannot read IP mode file for Infineon.AIROC-Wi-Fi-Bluetooth-STM32.1.6.1
+2024-11-19 22:18:58,970 [WARN] PackLoader:240 - Cannot read IP mode file for wolfSSL.I-CUBE-wolfSSH.1.4.17
+2024-11-19 22:18:58,973 [INFO] ThirdParty:978 - Integrity check success = true
+2024-11-19 22:18:58,973 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2024-11-19 22:18:58,973 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2024-11-19 22:18:59,391 [INFO] UserAuth:417 - Internet connection configuration mode: 1
