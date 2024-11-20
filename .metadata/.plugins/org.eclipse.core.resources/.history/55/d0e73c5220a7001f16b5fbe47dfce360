@@ -1,0 +1,113 @@
+#include "stm32f4xx_hal.h"
+#include "NRF24L01.h"
+
+extern SPI_HandleTypeDef hspil;
+#define NRF24_SPI &hspil
+
+#define NRF24_CE_PORT GPIOB
+#define NRF24_CE_PIN GPIO_PIN_6
+
+#define NRF24_CSN_PORT GPIOA
+#define NRF24_CSN_PIN GPIO_PIN_8
+
+void CS_Select (){
+	HAL_GPIO_WritePin(NRF24_CSN_PORT, NRF24_CSN_PIN, GPIO_PIN_RESET);
+}
+
+void CS_UnSelect (){
+	HAL_GPIO_WritePin(NRF24_CSN_PORT, NRF24_CSN_PIN, GPIO_PIN_SET);
+}
+
+void CE_Enable (){
+	HAL_GPIO_WritePin(NRF24_CE_PORT, NRF24_CE_PIN, GPIO_PIN_SET);
+}
+
+void CE_Disable (){
+	HAL_GPIO_WritePin(NRF24_CE_PORT, NRF24_CE_PIN, GPIO_PIN_RESET);
+}
+// Write a single byte of data to the register
+void nrf24_WriteReg (uint8_t Reg, uint8_t data)
+{
+	uint8_t buf[2];
+	buf[0] = Reg | 1<<5;
+	buf[1] = data;
+
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, buf, 2, 1000);
+
+	CS_UnSelect();
+}
+// Write multiple bytes starting from the register
+void nrf24_WriteRegMulti(uint8_t Reg, uint8_t *data, int size)
+{
+	uint8_t buf[2];
+	Reg |= 1<<5;
+
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Transmit(NRF24_SPI, data, size, 1000);
+
+	CS_UnSelect();
+}
+
+//Read the byte at Reg
+uint8_t nrf24_ReadReg(uint8_t Reg)
+{
+	uint8_t data = 0;
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Receive(NRF24_SPI, &data, 1, 100);
+
+	CS_UnSelect();
+
+	return data;
+}
+
+//Read size Bytes starting at Reg
+void nrf24_ReadRegMulti(uint8_t Reg, uint8_t *data, int size)
+{
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Receive(NRF24_SPI, &data, size, 1000);
+
+	CS_UnSelect();
+}
+
+//Send a command to the NRF24
+void nrfsendCmd (uint8_t cmd)
+{
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &cmd, 1, 100);
+
+	CS_UnSelect();
+}
+
+void NRF24_Init ()
+{
+	CE_Disable();
+	CS_UnSelect();
+
+	nrf24_WriteReg(CONFIG, 0); // Will be set up later
+
+	nrf24_WriteReg(EN_AA, 0); // No Acknowledgment of reception
+
+	nrf24_WriteReg(EN_RXADDR, 0); // No data pipes for RX/TX
+
+	nrf24_WriteReg(SETUP_AW, 0x03); // 5 bytes for TX/RX addresses
+
+	nrf24_WriteReg(SETUP_RETR, 0); // No retransmission
+
+	nrf24_WriteReg(RF_CH, 0); // Will be setup when doing TX or RX
+
+	nrf24_WriteReg(RF_PWR, 0x0E); // Power = 0db, data rate = 2Mbps
+
+	CE_Enable();
+	CS_Select();
+}
+
+void NRF24_TxMode (uint8_t *Address, uint16_t channel)

@@ -1,0 +1,73 @@
+#include "stm32f4xx_hal.h"
+
+extern SPI_HandleTypeDef hspil;
+#define NRF24_SPI &hspil
+
+#define NRF24_CE_PORT GPIOB
+#define NRF24_CE_PIN GPIO_PIN_6
+
+#define NRF24_CSN_PORT GPIOA
+#define NRF24_CSN_PIN GPIO_PIN_8
+
+void CS_Select (){
+	HAL_GPIO_WritePin(NRF24_CSN_PORT, NRF24_CSN_PIN, GPIO_PIN_RESET);
+}
+
+void CS_UnSelect (){
+	HAL_GPIO_WritePin(NRF24_CSN_PORT, NRF24_CSN_PIN, GPIO_PIN_SET);
+}
+
+void CE_Select (){
+	HAL_GPIO_WritePin(NRF24_CE_PORT, NRF24_CE_PIN, GPIO_PIN_SET);
+}
+
+void CE_UnSelect (){
+	HAL_GPIO_WritePin(NRF24_CE_PORT, NRF24_CE_PIN, GPIO_PIN_RESET);
+}
+// Write a single byte of data to the register
+void nrf24_WriteReg (uint8_t Reg, uint8_t data){
+	uint8_t buf[2];
+	buf[0] = Reg | 1<<5;
+	buf[1] = data;
+
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, buf, 2, 1000);
+
+	CS_UnSelect();
+}
+// Write multiple bytes starting from the register
+void nrf24_WriteRegMulti(uint8_t Reg, uint8_t *data, int size){
+	uint8_t buf[2];
+	Reg |= 1<<5;
+
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Transmit(NRF24_SPI, data, size, 1000);
+
+	CS_UnSelect();
+}
+
+uint8_t nrf24_ReadReg(uint8_t Reg){
+	uint8_t data = 0;
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Receive(NRF24_SPI, &data, 1,100);
+
+	CS_UnSelect();
+
+	return data;
+}
+
+void nrf24_ReadReg(uint8_t Reg, uint8_t *data, int size){
+	CS_Select();
+
+	HAL_SPI_Transmit(NRF24_SPI, &Reg, 1, 100);
+	HAL_SPI_Receive(NRF24_SPI, &data, size,1000);
+
+	CS_UnSelect();
+}
+
+
