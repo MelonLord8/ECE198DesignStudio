@@ -114,6 +114,9 @@ int main(void)
   NRF24_Init();
 
   NRF24_TxMode(TxAddress, 10);
+
+  uint16_t total_dust = 0;
+  int num_measurements = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -480,10 +483,16 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
 		//Read ADC value
 		uint16_t ADC_Value = HAL_ADC_GetValue(&hadc1);
-		char buf[64];
-		uint16_t dust = 170*3.3*ADC_Value/(0xFFF+1);
-		uint8_t * data = (uint8_t *)&dust;
-		NRF24_Transmit(data);
+		uint16_t dust = 170*33*ADC_Value/(4096 * 10);
+		total_dust += dust;
+		num_measurements++;
+		if (num_measurements == 100){
+			total_dust /= num_measurements;
+			uint8_t * data = (uint8_t *)&total_dust;
+			NRF24_Transmit(data);
+			total_dust = 0;
+			num_measurements = 0;
+		}
 	}
 }
 /* USER CODE END 4 */

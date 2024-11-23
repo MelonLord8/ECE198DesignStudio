@@ -425,3 +425,66 @@ Binding(CTRL+INSERT,
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-20 05:19:08.871
 !MESSAGE Indexed 'Sensor' (27 sources, 167 headers) in 6.41 sec: 16,892 declarations; 79,610 references; 1 unresolved inclusions; 92 syntax errors; 904 unresolved names (0.93%)
+!SESSION 2024-11-20 08:48:47.904 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-20 08:49:02.220
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-20 08:49:02.222
+!MESSAGE Log4j2 initialized with config file D:\ECE198stm32\Project\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-20 08:49:12.213
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-11-20 09:04:53.082 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-20 09:05:01.485
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-20 09:05:01.487
+!MESSAGE Log4j2 initialized with config file D:\ECE198stm32\Project\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-20 09:05:10.788
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-11-22 23:17:16.373 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-22 23:18:08.767
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-22 23:18:08.778
+!MESSAGE Log4j2 initialized with config file D:\ECE198stm32\Project\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-22 23:18:21.817
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.equinox.p2.touchpoint.natives 2 0 2024-11-23 03:29:02.274
+!MESSAGE Could not remove temporary backup directory (it is safe to manually delete it and its contents): C:\Users\User\AppData\Local\Temp\STM32CubeIDE_657630e3-cebb-4928-b1c9-798466ded063
+!SESSION 2024-11-23 03:29:15.645 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/D:/ECE198stm32/Project/
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-23 03:29:26.740
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-23 03:29:26.741
+!MESSAGE Log4j2 initialized with config file D:\ECE198stm32\Project\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-23 03:29:36.083
+!MESSAGE Started RMI Server, listening on port 41337

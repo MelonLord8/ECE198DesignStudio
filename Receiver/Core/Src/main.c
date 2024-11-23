@@ -97,6 +97,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
   NRF24_Init();
   NRF24_RXMode(RxAddress, 10);
+  int alarm_tick = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,20 +109,24 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  if (isDataAvailable(1) == 1){
 		   NRF24_Receive(RxData);
-		   uint16_t data = *(uint16_t *)RxData;
+		   uint16_t data = *((uint16_t *)RxData);
 		   HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000);
-		   if (data > 70){
+		   if (data >= 70){
+			   alarm_tick = 600;
+		   }
+		   if (alarm_tick >= 1){
 			   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-			   HAL_DELAY(500);
+			   HAL_DELAY(400);
 			   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-			   HAL_DELAY(500);
+			   HAL_DELAY(400);
+			   alarm_tick --;
 		   }
 		   else
 		   {
 			   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
-			   HAL_DELAY(500);
+			   HAL_DELAY(400);
 			   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
-			   HAL_DELAY(500);
+			   HAL_DELAY(400);
 		   }
 	  }
   }
