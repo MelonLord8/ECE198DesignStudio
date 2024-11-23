@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "NRF24L01.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,7 +97,7 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   NRF24_Init();
-  NRF24_RXMode(RxAddress, 10);
+  NRF24_RxMode(RxAddress, 10);
   int alarm_tick = 0;
   /* USER CODE END 2 */
 
@@ -107,27 +108,46 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  if (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET){
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
+		  continue;
+	  }
 	  if (isDataAvailable(1) == 1){
-		   NRF24_Receive(RxData);
-		   uint16_t data = *((uint16_t *)RxData);
-		   HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000);
-		   if (data >= 70){
-			   alarm_tick = 600;
-		   }
-		   if (alarm_tick >= 1){
-			   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
-			   HAL_DELAY(400);
-			   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
-			   HAL_DELAY(400);
-			   alarm_tick --;
-		   }
-		   else
-		   {
-			   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
-			   HAL_DELAY(400);
-			   HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
-			   HAL_DELAY(400);
-		   }
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
+		  NRF24_Receive(RxData);
+
+		  uint16_t data = *((uint16_t *)RxData);
+		  HAL_UART_Transmit(&huart2, RxData, strlen((char *)RxData), 1000);
+
+		  if (data == 0xFFFF){
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
+			  HAL_Delay(400);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+			  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
+			  HAL_Delay(400);
+			  continue;
+		  }
+
+		  if (data >= 70){
+			  alarm_tick = 150;
+		  }
+		  if (alarm_tick >= 1){
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);
+			  HAL_Delay(400);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);
+			  HAL_Delay(400);
+			  alarm_tick --;
+		  }
+		  else
+		  {
+			  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_SET);
+			  HAL_Delay(400);
+			  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7, GPIO_PIN_RESET);
+			  HAL_Delay(400);
+		  }
 	  }
   }
   /* USER CODE END 3 */

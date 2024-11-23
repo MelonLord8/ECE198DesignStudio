@@ -22,6 +22,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "NRF24L01.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,6 +71,9 @@ static void MX_SPI1_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 uint8_t TxAddress[] = {0xEE, 0XDD, 0XCC, 0XBB, 0xAA};
+uint16_t total_dust = 0;
+int num_measurements = 0;
+bool is_testing = false;
 /* USER CODE END 0 */
 
 /**
@@ -114,9 +120,6 @@ int main(void)
   NRF24_Init();
 
   NRF24_TxMode(TxAddress, 10);
-
-  uint16_t total_dust = 0;
-  int num_measurements = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -473,6 +476,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
@@ -487,13 +494,26 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		total_dust += dust;
 		num_measurements++;
 		if (num_measurements == 100){
-			total_dust /= num_measurements;
-			uint8_t * data = (uint8_t *)&total_dust;
-			NRF24_Transmit(data);
-			total_dust = 0;
-			num_measurements = 0;
+			if (!is_testing){
+				total_dust /= num_measurements;
+				uint8_t * data = (uint8_t *)&total_dust;
+				NRF24_Transmit(data);
+				total_dust = 0;
+				num_measurements = 0;
+			}
+			else{
+				is_testing = false;
+			}
 		}
 	}
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	is_testing = true;
+	uint16_t msg = 0xffff;
+	uint8_t * data = (uint8_t *)&msg;
+	NRF24_Transmit(data);
 }
 /* USER CODE END 4 */
 

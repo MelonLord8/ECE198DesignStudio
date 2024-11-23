@@ -41,7 +41,6 @@ void nrf24_WriteReg (uint8_t Reg, uint8_t data)
 // Write multiple bytes starting from the register
 void nrf24_WriteRegMulti(uint8_t Reg, uint8_t *data, int size)
 {
-	uint8_t buf[2];
 	Reg |= 1<<5;
 
 	CS_Select();
@@ -152,7 +151,7 @@ uint8_t NRF24_Transmit (uint8_t *data)
 	return 0;
 }
 
-uint8_t NRF24_RXMode(uint8_t *Address, uint8_t channel)
+void NRF24_RxMode(uint8_t *Address, uint8_t channel)
 {
 	CE_Disable();
 
@@ -183,7 +182,7 @@ uint8_t isDataAvailable(int pipenum)
 	uint8_t status = nrf24_ReadReg(STATUS);
 
 	if ((status & (1 << 6)) && (status & (pipenum << 1))){
-		nrf24_WriteReg(Status, (1<<6));
+		nrf24_WriteReg(status, (1<<6));
 
 		return 1;
 	}
@@ -205,6 +204,6 @@ void NRF24_Receive (uint8_t *data){
 	HAL_Delay(1);
 
 	cmdtosend = FLUSH_RX;
-	nrfsendCmd(cdmtosend);
+	nrfsendCmd(cmdtosend);
 }
 

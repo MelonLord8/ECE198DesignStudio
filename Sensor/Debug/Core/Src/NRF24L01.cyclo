@@ -10,3 +10,6 @@
 ../Core/Src/NRF24L01.c:90:6:NRF24_Init	1
 ../Core/Src/NRF24L01.c:111:6:NRF24_TxMode	1
 ../Core/Src/NRF24L01.c:130:9:NRF24_Transmit	3
+../Core/Src/NRF24L01.c:155:9:NRF24_RXMode	1
+../Core/Src/NRF24L01.c:181:9:isDataAvailable	3
+../Core/Src/NRF24L01.c:194:6:NRF24_Receive	1
