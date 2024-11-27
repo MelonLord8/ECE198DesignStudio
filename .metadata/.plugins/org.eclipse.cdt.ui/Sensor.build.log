@@ -1,37 +1,17 @@
-04:18:16 **** Incremental Build of configuration Debug for project Sensor ****
+22:24:52 **** Incremental Build of configuration Debug for project Sensor ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/NRF24L01.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/NRF24L01.d" -MT"Core/Src/NRF24L01.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/NRF24L01.o"
-../Core/Src/NRF24L01.c: In function 'nrf24_WriteRegMulti':
-../Core/Src/NRF24L01.c:44:17: warning: unused variable 'buf' [-Wunused-variable]
-   44 |         uint8_t buf[2];
-      |                 ^~~
-../Core/Src/NRF24L01.c: In function 'nrf24_ReadRegMulti':
-../Core/Src/NRF24L01.c:75:36: warning: passing argument 2 of 'HAL_SPI_Receive' from incompatible pointer type [-Wincompatible-pointer-types]
-   75 |         HAL_SPI_Receive(NRF24_SPI, &data, size, 1000);
-      |                                    ^~~~~
-      |                                    |
-      |                                    uint8_t ** {aka unsigned char **}
-In file included from ../Core/Inc/stm32f4xx_hal_conf.h:403,
-                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
-                 from ../Core/Src/NRF24L01.c:1:
-../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:671:69: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t **' {aka 'unsigned char **'}
-  671 | HAL_StatusTypeDef HAL_SPI_Receive(SPI_HandleTypeDef *hspi, uint8_t *pData, uint16_t Size, uint32_t Timeout);
-      |                                                            ~~~~~~~~~^~~~~
-../Core/Src/NRF24L01.c: In function 'NRF24_RXMode':
-../Core/Src/NRF24L01.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
-  179 | }
-      | ^
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-g++ -o "Sensor.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ECE198stm32\Project\Sensor\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Sensor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: Sensor.elf
  
 arm-none-eabi-size  Sensor.elf 
 arm-none-eabi-objdump -h -S Sensor.elf  > "Sensor.list"
    text	   data	    bss	    dec	    hex	filename
-  19636	     20	   1956	  21612	   546c	Sensor.elf
+  16796	     16	   1944	  18756	   4944	Sensor.elf
 Finished building: default.size.stdout
  
 Finished building: Sensor.list
  
 
-04:18:20 Build Finished. 0 errors, 3 warnings. (took 4s.152ms)
+22:24:55 Build Finished. 0 errors, 0 warnings. (took 2s.388ms)
 

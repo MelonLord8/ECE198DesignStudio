@@ -1,10 +1,10 @@
-05:44:12 **** Incremental Build of configuration Debug for project Receiver ****
+22:20:08 **** Incremental Build of configuration Debug for project Receiver ****
 make -j8 all 
 arm-none-eabi-size  Receiver.elf 
    text	   data	    bss	    dec	    hex	filename
-  12744	     20	   1764	  14528	   38c0	Receiver.elf
+  12476	     92	   2140	  14708	   3974	Receiver.elf
 Finished building: default.size.stdout
  
 
-05:44:12 Build Finished. 0 errors, 0 warnings. (took 267ms)
+22:20:09 Build Finished. 0 errors, 0 warnings. (took 735ms)
 
